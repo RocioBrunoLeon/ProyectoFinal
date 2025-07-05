@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Artesanales</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/header.css">
+  <link rel="stylesheet" href="estilos/productos.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+  <header class="header">
+    <nav id="navbar" class="navbar">
+      <a href="index.html">Home</a>
+      <a href="#" id="mi-cuenta-btn">Mi cuenta</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#" id="abrir-carrito">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </a>
+    </nav>
+    <img src="img/logo.jpg" alt="Logo" class="logo">
+  </header>
+
+  <main>
+    <section class="productos">
+      <div class="producto" data-id="1">
+        <a href="producto.html">
+          <img src="img/producto1.webp" alt="Vela 1" class="imagen-producto">
+        </a>
+        <span>Vela artesanal grande</span>
+        <p>Hecha con cera natural y fragancia floral.</p>
+        <h4>$15.000</h4>
+        <a href="#" class="carrito"><i class="fal fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="producto" data-id="2">
+        <a href="producto.html">
+          <img src="img/producto2.png" alt="Vela 2" class="imagen-producto">
+        </a>
+        <span>Vela artesanal grande</span>
+        <p>Hecha con cera natural y fragancia floral.</p>
+        <h4>$15.000</h4>
+        <a href="#" class="carrito"><i class="fal fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="producto" data-id="3">
+        <a href="producto.html">
+          <img src="img/producto3.jpg" alt="Difusor 1" class="imagen-producto">
+        </a>
+        <span>Difusor artesanal</span>
+        <p>Hecho con fragancia floral.</p>
+        <h4>$15.000</h4>
+        <a href="#" class="carrito"><i class="fal fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="producto" data-id="4">
+        <a href="producto.html">
+          <img src="img/producto4.png" alt="Jabon 1" class="imagen-producto">
+        </a>
+        <span>Jabon artesanal</span>
+        <p>Hecho con productos naturales y fragancia floral.</p>
+        <h4>$15.000</h4>
+        <a href="#" class="carrito"><i class="fal fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="producto" data-id="5">
+        <a href="producto.html">
+          <img src="img/producto5.jpg" alt="Jabon 2" class="imagen-producto">
+        </a>
+        <span>Jabon artesanal</span>
+        <p>Hecho con productos naturales y fragancia floral.</p>
+        <h4>$15.000</h4>
+        <a href="#" class="carrito"><i class="fal fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="producto" data-id="6">
+        <a href="producto.html">
+          <img src="img/producto6.jpg" alt="Jabon 3" class="imagen-producto">
+        </a>
+        <span>Jabon artesanal</span>
+        <p>Hecho con productos naturales y fragancia floral.</p>
+        <h4>$15.000</h4>
+        <a href="#" class="carrito"><i class="fal fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="producto" data-id="7">
+        <a href="producto.html">
+          <img src="img/producto7.webp" alt="Jabon 4" class="imagen-producto">
+        </a>
+        <span>Jabon artesanal</span>
+        <p>Hecho con productos naturales y fragancia floral.</p>
+        <h4>$15.000</h4>
+        <a href="#" class="carrito"><i class="fal fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="producto" data-id="8">
+        <a href="producto.html">
+          <img src="img/producto8.jpg" alt="Difusor 2" class="imagen-producto">
+        </a>
+        <span>Difusor artesanal</span>
+        <p>Hecho con fragancia floral.</p>
+        <h4>$15.000</h4>
+        <a href="#" class="carrito"><i class="fal fa-shopping-cart"></i></a>
+      </div>
+      <div class="ver-mas-contenedor">
+        <button id="verMasBtn" class="btn-ver-mas">Ver más productos</button>
+      </div>
+      
+    </section>
+  </main>
+  
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-categorias">
+      <h3>Categorías</h3>
+      <ul>
+        <li><a href="velas.html">Velas</a></li>
+        <li><a href="jabones.html">Jabones</a></li>
+        <li><a href="difusores.html">Difusores</a></li>
+      </ul>
+    </div>
+    <div class="footer-contacto">
+      <h3>Contacto</h3>
+      <ul>
+        <li><a href="https://wa.me/541156971146" target="_blank">WhatsApp</a></li>
+        <li><a href="https://instagram.com/trulala.art" target="_blank">Instagram</a></li>
+        <li><a href="tel:+541156971146">Teléfono: (011) 5697-1146</a></li>
+        <li>Horarios:</li>
+        <li>Lun a Vie de 10 a 18 hs</li>
+        <li>Sabados de 10 a 13 hs</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <div id="carrito-drawer" class="drawer">
+    <div class="drawer-header">
+      <h2>Mi Carrito</h2>
+      <button id="cerrar-carrito">&times;</button>
+    </div>
+    <div id="contenido-carrito" class="drawer-content"></div>
+    <div class="drawer-footer">
+      <label for="codigo-descuento">Código de descuento:</label>
+      <input type="text" id="codigo-descuento" placeholder="Ingresá tu código">
+      <p id="total-carrito">Total: $0</p>
+      <button onclick="vaciarCarrito()">Vaciar carrito</button>
+      <button onclick="finalizarCompra()">Finalizar compra</button>
+    </div>
+  </div>
+
+  <div id="modal-cuenta" class="modal oculto">
+    <div class="modal-contenido">
+      <h2>Mi cuenta</h2>
+      <input type="text" id="usuario" placeholder="Nombre de usuario">
+      <input type="password" id="contrasena" placeholder="Contraseña">
+      <button onclick="iniciarSesion()">Iniciar sesión / Registrarse</button>
+      <button onclick="cerrarModalCuenta()">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalle del producto</title>
+  <link rel="stylesheet" href="estilos/style.css" />
+  <link rel="stylesheet" href="estilos/header.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="index.html#">Volver</a>
+    </nav>
+    <h2>Detalle del Producto</h2>
+  </header>
+
+  <main style="padding: 30px; max-width: 600px; margin: auto;">
+    <img src="img/producto1.webp" alt="Producto 1" style="width: 100%; border-radius: 10px;">
+    <h3>Vela artesanal grande</h3>
+    <p>Hecha con cera natural, ideal para espacios íntimos. Fragancia duradera y envolvente.</p>
+    <p><strong>Precio:</strong> $15.000</p>
+
+    <label for="fragancia">Elegí tu fragancia:</label>
+    <select id="fragancia">
+      <option>Lavanda</option>
+      <option>Vainilla</option>
+      <option>Rosa</option>
+      <option>Eucalipto</option>
+    </select>
+
+    <br><br>
+    <button onclick="history.back()">Agregar y volver</button>
+  </main>
+</body>
+</html>
